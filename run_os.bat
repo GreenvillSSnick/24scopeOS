@@ -2,9 +2,9 @@
 setlocal EnableDelayedExpansion
 
 set ROOT=%~dp0
-set QEMU=C:\Users\khans\scoop\apps\qemu\current\qemu-system-x86_64.exe
-set OVMF_CODE=C:\Users\khans\scoop\apps\qemu\current\share\edk2-x86_64-code.fd
-set OVMF_VARS_SRC=C:\Users\khans\scoop\apps\qemu\current\share\edk2-i386-vars.fd
+set QEMU=%USERPROFILE%\scoop\apps\qemu\current\qemu-system-x86_64.exe
+set OVMF_CODE=%USERPROFILE%\scoop\apps\qemu\current\share\edk2-x86_64-code.fd
+set OVMF_VARS_SRC=%USERPROFILE%\scoop\apps\qemu\current\share\edk2-i386-vars.fd
 set ISO=%ROOT%build\24scope.iso
 set VARS=%ROOT%build\ovmf-vars-run.fd
 set SERIAL=%ROOT%build\serial.log

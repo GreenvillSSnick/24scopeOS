@@ -21,7 +21,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-"C:\Users\khans\Desktop\GoLink.exe" /entry _start frontend.obj index.obj radar.obj ws2_32.dll kernel32.dll user32.dll /fo frontend.exe
+"%USERPROFILE%\Desktop\GoLink.exe" /entry _start frontend.obj index.obj radar.obj ws2_32.dll kernel32.dll user32.dll /fo frontend.exe
 if errorlevel 1 (
     echo Failed to link frontend executable
     exit /b 1
@@ -34,7 +34,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-"C:\Users\khans\Desktop\GoLink.exe" /entry _start backend.obj ws2_32.dll wininet.dll kernel32.dll user32.dll /fo server.exe
+"~\Desktop\GoLink.exe" /entry _start backend.obj ws2_32.dll wininet.dll kernel32.dll user32.dll /fo server.exe
 if errorlevel 1 (
     echo Failed to link executable
     exit /b 1
